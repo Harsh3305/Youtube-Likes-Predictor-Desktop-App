@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #242B2E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane fx:id="Scene1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1c273a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Channel Name" textFill="WHITE" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="84.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <Label text="Subscriber Count" textFill="WHITE" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="203.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <Label text="Total Views" textFill="WHITE" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="324.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ChannelName" minHeight="45.0" promptText="Eg. BB ki Vines" style="-fx-border-color: #fff;" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="129.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="TotalViews" minHeight="45.0" promptText="Eg. 2500" style="-fx-border-color: #fff;" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="372.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="SubscriberCount" minHeight="45.0" promptText="Eg. 200" style="-fx-border-color: #fff;" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="821.4" AnchorPane.topAnchor="248.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="nextButton" graphicTextGap="5.0" mnemonicParsing="false" onMouseClicked="#changeScene" style="-fx-background-color: #4DD637;" text="Next" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="61.4" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="355.0" AnchorPane.topAnchor="601.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="30.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+                </Button>
+                <Label text="Video Title" textFill="WHITE" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="84.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <Label text="Video Description" textFill="WHITE" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="203.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="VideoTitle" minHeight="45.0" promptText="Holi Prank" style="-fx-border-color: #fff;" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="251.39999999999998" AnchorPane.topAnchor="129.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </TextField>
+                <TextArea fx:id="Description" prefHeight="173.0" prefWidth="374.0" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="251.0" AnchorPane.topAnchor="248.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="24.0" />
+                    </font>
+                </TextArea>
+                <Label text="Total Videos" textFill="WHITE" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="472.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="TotalVideos" layoutX="655.0" layoutY="518.0" minHeight="45.0" promptText="Eg. 149" style="-fx-border-color: #fff;" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="251.0">
+                    <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="Scene2" disable="true" opacity="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1c273a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="541.0" layoutY="27.0" prefHeight="87.0" prefWidth="198.0" text="Category" AnchorPane.bottomAnchor="606.0" AnchorPane.leftAnchor="541.0" AnchorPane.rightAnchor="540.6" AnchorPane.topAnchor="27.0">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.625" startX="0.47596153846153855">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color blue="0.03529411926865578" green="0.9725490212440491" red="0.2862745225429535" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color blue="1.0" green="1.0" red="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+                </Label>
+                <HBox layoutX="75.0" layoutY="149.0" AnchorPane.bottomAnchor="193.39999999999998" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="149.0">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                            <children>
+                                <RadioButton fx:id="cat1" mnemonicParsing="false" onMouseClicked="#select" text="Film &amp; Animation" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat2" mnemonicParsing="false" onMouseClicked="#select" text="Autos &amp; Vehicles" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat3" mnemonicParsing="false" onMouseClicked="#select" text="Music" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat4" mnemonicParsing="false" onMouseClicked="#select" text="Pets &amp; Aminals" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat5" mnemonicParsing="false" onMouseClicked="#select" text="Sports" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat6" mnemonicParsing="false" onMouseClicked="#select" text="Short Movies" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat7" mnemonicParsing="false" onMouseClicked="#select" text="Travel &amp; Events" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat8" mnemonicParsing="false" onMouseClicked="#select" text="Gaming" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat9" mnemonicParsing="false" onMouseClicked="#select" text="Videoblogging" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                            <children>
+                                <RadioButton fx:id="cat10" mnemonicParsing="false" onMouseClicked="#select" text="Comedy" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat11" mnemonicParsing="false" onMouseClicked="#select" text="Entertainment" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat12" mnemonicParsing="false" onMouseClicked="#select" text="News &amp; Politics" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat13" mnemonicParsing="false" onMouseClicked="#select" text="Howto &amp; Style" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat14" mnemonicParsing="false" onMouseClicked="#select" text="Education" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat15" mnemonicParsing="false" onMouseClicked="#select" text="Science &amp; Technology" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat16" mnemonicParsing="false" onMouseClicked="#select" text="Nonprofits &amp; activism" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat17" mnemonicParsing="false" onMouseClicked="#select" text="Movies" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="cat18" mnemonicParsing="false" onMouseClicked="#select" text="Anime/Animation" textFill="#49f809">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </RadioButton>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <RadioButton fx:id="cat19" mnemonicParsing="false" onMouseClicked="#select" text="Action/Adventure" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat20" mnemonicParsing="false" onMouseClicked="#select" text="Classics" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat21" mnemonicParsing="false" onMouseClicked="#select" text="Documentary" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat22" mnemonicParsing="false" onMouseClicked="#select" text="Drama" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat23" mnemonicParsing="false" onMouseClicked="#select" text="Family" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat24" mnemonicParsing="false" onMouseClicked="#select" text="Foreign" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat25" mnemonicParsing="false" onMouseClicked="#select" text="Horror" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat26" mnemonicParsing="false" onMouseClicked="#select" text="Sci-Fi/Fantasy" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat27" mnemonicParsing="false" onMouseClicked="#select" text="Thriller" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <RadioButton fx:id="cat28" mnemonicParsing="false" onMouseClicked="#select" text="Shorts" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cat29" mnemonicParsing="false" onMouseClicked="#select" text="Shows" textFill="#49f809">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+            <Button fx:id="finalSubmit" layoutX="406.0" layoutY="597.0" mnemonicParsing="false" onMouseClicked="#CollectData" prefHeight="81.0" prefWidth="468.0" text="Submit" textFill="#49f809" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="406.0" AnchorPane.topAnchor="597.0">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="ResultScene" disable="true" opacity="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1c273a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="likesResult" fill="#4bff00" layoutX="434.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="436.536865234375">
+               <font>
+                  <Font name="Montserrat-Regular" size="79.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="loadingGif" fitHeight="246.0" fitWidth="392.0" layoutX="477.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
